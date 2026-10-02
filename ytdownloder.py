@@ -1,10 +1,9 @@
 import os
 from yt_dlp import YoutubeDL
-
+# text
 def download_youtube_content(url, download_type="mp3", output_folder=r"D:\\User\\Downloads"):
     """
     下載 YouTube 影片/播放清單，並依需求儲存為 MP3 或 MP4 格式。
-    
     :param url: YouTube 影片或播放清單網址
     :param download_type: 下載類型 ('mp3' 或 'mp4')
     :param output_folder: 下載儲存的目標資料夾
@@ -68,7 +67,7 @@ if __name__ == "__main__":
 
     # 2. 選擇格式
     while True:
-        choice = input("請選擇下載格式 (1: MP3 音訊, 2: MP4 影片) [預設 1]: ").strip()
+        choice = input("請選擇下載格式 (1: MP3 音訊, 2: MP4 影片): ").strip()
         if choice in ["", "1"]:
             fmt = "mp3"
             break
